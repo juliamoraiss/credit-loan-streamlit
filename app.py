@@ -53,7 +53,7 @@ def main():
 
     # Menu
 
-    menu = ['EDA', 'Model', 'Prediction']
+    menu = ['EDA', 'Prediction']
     choices = st.sidebar.selectbox('Select:', menu)
 
     if choices == 'EDA':
@@ -81,9 +81,6 @@ def main():
             st.table(na_values)
 
 
-    if choices == 'Model':
-        st.subheader('Model')
-    
     if choices == 'Prediction':
 
         st.subheader("Please, fill the spaces below to check if you're able to get a loan:")
